@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дильмухамедова Залина</title>
+    <style>
+        .red { color: red; font-size: 7px; }
+        .orange { color: orange; font-size: 6px; }
+        .black { color: black; font-size: 5px; }
+        .pink { color: pink; font-size: 4px; }
+        .purple { color: purple; font-size: 3px; }
+        .blue { color: blue; font-size: 2px; }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        function weekDay(size, day, color) {
+            var days = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+            var index = days.indexOf(day);
+            var className = color.toLowerCase();
+            var element = document.createElement('h2');
+            element.textContent = day;
+            element.className = className;
+            element.style.fontSize = size + 'px';
+            document.body.appendChild(element);
+        }
+
+       
+        weekDay(7, 'Понедельник', 'orange');
+        weekDay(6, 'Вторник', 'black');
+        weekDay(5, 'Среда', 'pink');
+        weekDay(4, 'Четверг', 'purple');
+        weekDay(3, 'Пятница', 'blue');
+        weekDay(2, 'Суббота', 'grey');
+        weekDay(1, 'Воскресенье', 'red');
+    </script>
+</body>
+</html>

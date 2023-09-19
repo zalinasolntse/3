@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дильмухамедова Залина</title>
+    <style>
+        .info {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <div class="info">
+    </div>
+
+<script>
+    "use strict";
+    let today = new Date();
+    let hours = today.getHours();
+    let minute = today.getMinutes();
+    if (minute < 10) minute = "0" + minute;
+    if (hours < 12) {
+    var time12 = hours + ":" + minute + " am";
+    } else {
+    var time12 = hours - 12 + ":" + minute + " pm";
+    }
+    console.log("текущее время - ", time12);
+    </script>

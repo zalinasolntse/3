@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дильмухамедова Залина</title>
+    <style>
+        .info {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <div class="info">
+        <p>Функция определяется как:</p>
+        <img src="Снимок1.PNG" alt="Функция">
+    </div>
+
+    <script>
+        var x = prompt("Введите значение x:");
+        var y = prompt("Введите значение y:");
+        var z = prompt("Введите значение z:");
+
+        x = parseFloat(x);
+        y = parseFloat(y);
+        z = parseFloat(z);
+
+        var b = z * (Math.tan(y) - Math.exp(-(x + 3)));
+
+        document.write("<h2>Результат:</h2>");
+        document.write("<p>x = " + x + "</p>");
+        document.write("<p>y = " + y + "</p>");
+        document.write("<p>z = " + z + "</p>");
+        document.write("<p>b = " + b + "</p>");
+    </script>
+
+    <hr>
+
+    <footer>
+        <p>Разработчик [Дильмухамедова Залина]</p>
+    </footer>
+</body>
+</html>
